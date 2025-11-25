@@ -5,7 +5,7 @@ echo -n "Enter target (IP or domain): "
 read target
 
 echo "[*] Pinging $target ..."
-iwconfig wlan0 | ping -c 4 $target > result.txt
+ping -c 4 $target > result.txt
 
 echo "">>result.txt
 echo "============Iwconfig==============">>result.txt
